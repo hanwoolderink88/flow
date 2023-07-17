@@ -1,0 +1,36 @@
+{
+    "name": "hanwoolderink/flow",
+    "description": "Flow package",
+    "type": "library",
+    "require": {
+        "illuminate/queue": "*",
+        "illuminate/support": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hanwoolderink\\Flow\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hanwoolderink\\Flow\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Han Woolderink",
+            "email": "hanwoolderink@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hanwoolderink\\Flow\\FlowProvider"
+            ]
+        }
+    }
+}
